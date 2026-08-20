@@ -9,9 +9,15 @@ root.render(
 
 function Header () {
     return (
-        <header>
-            <img src="/src/react-logo.png" alt="React Logo"></img>
-            <h1>Hello, React!</h1>
+        <header className="header">
+            <img src="/src/react-logo.png" className="nav-logo" alt="React Logo"></img>
+            <nav>
+                <ul className="nav-list">
+                    <li className="nav-list-item">Home</li>
+                    <li className="nav-list-item">About</li>
+                    <li className="nav-list-item">Contact</li>
+                </ul>
+            </nav>
         </header>
     )
 }
@@ -19,7 +25,8 @@ function Header () {
 // Can create own reusable component as a function using JS to render in html
 function MainContent () {
     return (
-        <main>
+        <main className="main-content">
+            <h1 className="greeting">Hello, React!</h1>
             <h3>React is cool!</h3>
             <ul>
                 <li>Create root in React </li>
