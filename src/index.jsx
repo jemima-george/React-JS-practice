@@ -7,18 +7,20 @@ root.render(
     < Page />
 )
 
-// Can create own reusable component as a function using JS to render in html
-function MainContent () {
-    return <h3>React is cool!</h3>
+function Header () {
+    return (
+        <header>
+            <img src="/src/react-logo.png" alt="React Logo"></img>
+            <h1>Hello, React!</h1>
+        </header>
+    )
 }
 
-// Custom Component
-function Page () {
+// Can create own reusable component as a function using JS to render in html
+function MainContent () {
     return (
         <main>
-            <img src="/src/react-logo.png" alt="React Logo"></img>
-            <h1 className="header">Hello, React!</h1>
-            < MainContent /> 
+            <h3>React is cool!</h3>
             <ul>
                 <li>Create root in React </li>
                 <li>Render content into root div</li>
@@ -30,8 +32,25 @@ function Page () {
                 <li>Easy to Use</li>
                 <li>Popular Library used in Frontend development</li>
             </ol>
-            <footer>~ Created by Orion Black</footer>
         </main>
+
+    )
+}
+
+function Footer () {
+    return (
+        <footer>~ Created by Orion Black</footer>
+    )
+}
+
+// Custom Component
+function Page () {
+    return (
+        <>
+            < Header />
+            < MainContent /> 
+            < Footer />
+        </>
     )
 }
 
