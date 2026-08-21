@@ -13,7 +13,7 @@ body {
     background-color: #f95a5a;
     color: white;
     height: 55px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .header > icon {
@@ -32,8 +32,8 @@ article.journal-entry {
 }
 
 .travel-img-container {
-    width: 200px;
-    height: 180px;
+    width: 320px;
+    height: 200px;
     overflow: hidden;
     border-radius: 5px;
     flex-shrink: 0;
@@ -88,8 +88,8 @@ article.journal-entry {
 .info-container p.entry-text {
     line-height: 1.5;
     font-size: 0.85rem;
-    width: 900px;
-    height: 200vh;
+    width: 800px;
+    height: 80px;
     overflow: hidden;
 }
 
