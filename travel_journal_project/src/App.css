@@ -1,5 +1,9 @@
-body {
+html, body {
     margin: 0;
+}
+
+body {
+    font-family: Inter;
 }
 
 .header {
@@ -9,6 +13,7 @@ body {
     background-color: #f95a5a;
     color: white;
     height: 55px;
+    margin-bottom: 25px;
 }
 
 .header > icon {
@@ -20,4 +25,72 @@ body {
 .header > p {
     font-family: Inter;
 }
+
+article.journal-entry {
+    display: flex;
+    margin-left: 50px;
+}
+
+.travel-img-container {
+    width: 200px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.travel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-container {
+    margin-left: 25px;
+}
+
+.info-location {
+    display: flex;
+    align-items: center;
+}
+
+.info-location i {
+    width: 20px;
+    color: #801313;
+    margin-right: 4px;
+    font-size: 25px;
+}
+
+.info-container h3.country {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-right: 14px;
+}
+
+.info-container a {
+    color: #2B283A;
+    font-size: 0.81rem;
+}
+
+.info-container a:visited {
+    color: #918E9B;
+}
+
+.info-container h2.entry-title {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.info-container p.trip-dates {
+    font-weight: bold;
+}
+
+.info-container p.entry-text {
+    line-height: 1.5;
+    font-size: 0.85rem;
+    width: 900px;
+    height: 200vh;
+    overflow: hidden;
+}
+
 
