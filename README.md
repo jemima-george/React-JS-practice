@@ -15,7 +15,19 @@
 
 - Organize the project
 
-## Instructions To Run:
+- Build the Travel Journal project
+
+- Create reusable components
+
+- Pass data using props
+
+- Render lists using .map()
+
+- Use the key prop
+
+- Pass objects through props
+
+## Instructions To Set up and Run:
 1. Set up React using Vite with:
 
         npm create vite@latest . -- --template react
@@ -24,4 +36,17 @@
 
         npm run dev
 
-3. View application in localhost url
+3. View application on the localhost URL
+
+## Travel Journal Project:
+
+Built a Travel Journal that displays each travel destination trip as a journal entry using React + Vite. 
+
+### How to Run Travel Journal Project:
+1. Navigate to folder - travel_journal_project
+
+2. Run dev server -
+
+        npm run dev
+
+3. View Travel Journal Project on the localhost URL 
