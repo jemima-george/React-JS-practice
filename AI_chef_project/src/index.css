@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: Inter;
+  background-color:aliceblue;
 }
 
 
@@ -13,6 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 1px 3px 0px #747171;
+  background-color: white;
 }
 
 .header > h1 {
@@ -27,4 +29,36 @@ body {
   font-size: 30px;
   color: #878383;
   margin-right: 12px;
+}
+
+main {
+  padding: 10px 30px;
+}
+
+.add-ingredient-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  height: 38px;
+}
+
+.add-ingredient-form > input {
+  border-radius: 4px;
+  border: 1px solid #878383;
+  padding: 9px 20px;
+  box-shadow: 0px 1px 2px 0px #747171;
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.add-ingredient-form > button {
+  font-family: Inter, sans-serif;
+  font-weight: 450;
+  border-radius: 6px;
+  border: none;
+  background-color: #b37e2e;
+  color: white;
+  width: 170px;
 }
