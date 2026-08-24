@@ -9,9 +9,8 @@ export default function Main (){
         <li key={ingredient}>{ingredient}</li>
     ))
 
-    function handleSubmit(event){
-        event.preventDefault()
-        const formData = new FormData(event.currentTarget)
+    // Action will send form data
+    function addIngredient(formData){
         const newIngredient = formData.get("ingredient")
         // Set new state as a list with previous ingredients and new ingredient
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
@@ -19,7 +18,7 @@ export default function Main (){
 
     return (
         <main>
-            <form onSubmit={handleSubmit} className="add-ingredient-form">
+            <form action={addIngredient} className="add-ingredient-form">
                 <input aria-label="Add Ingredient" placeholder=" E.g: yogurt" name="ingredient"></input>
                 <button>+ Add Ingredient</button>
             </form>
