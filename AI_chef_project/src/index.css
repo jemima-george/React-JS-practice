@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 3px 0px #747171;
+}
+
+.header > h1 {
+  font-size: 30px;
+  color: #b37e2e;
+  margin-right: 12px;
+  font-weight: 450;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header > icon {
+  font-size: 30px;
+  color: #878383;
+  margin-right: 12px;
+}
