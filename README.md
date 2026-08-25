@@ -27,6 +27,19 @@
 
 - Pass objects through props
 
+- Create interactive components
+
+- Use useState
+
+- Handle user events
+
+- Create a simple form
+
+- Update UI based on state
+
+- Practise conditional rendering
+
+
 ## Instructions To Set up and Run:
 1. Set up React using Vite with:
 
@@ -50,3 +63,18 @@ Built a Travel Journal that displays each travel destination trip as a journal e
         npm run dev
 
 3. View Travel Journal Project on the localhost URL 
+
+
+## AI Chef Project:
+
+Built a React application that generates a recipe using AI based on the ingredients the user inputs. 
+
+### How to Run AI Chef Project:
+1. Navigate to folder - AI_chef_project
+
+2. Run dev server -
+
+        npm run dev
+
+3. View AI Chef Project on the localhost URL
+
