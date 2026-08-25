@@ -2,12 +2,13 @@
 import React from "react"
 import IngredientsList from "../components/IngredientsList"
 import ChefRecipe from "../components/ChefRecipe"
+import { getRecipeFromMistral } from "./ai"
 
 export default function Main (){
     // Have to initialise state and react will re-run when set state changes
-    const [ingredients, setIngredients] = React.useState(["all the main spices", "pasta", "ground beef", "tomato paste"])
+    const [ingredients, setIngredients] = React.useState([])
 
-    const [recipeShown, setRecipeShown] = React.useState(false)
+    const [recipe, setRecipe] = React.useState("")
 
     // Action will send form data
     function addIngredient(formData){
@@ -16,8 +17,10 @@ export default function Main (){
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
 
-    function toggleRecipeShown (){
-        setRecipeShown(prevRecipeShown => !prevRecipeShown)
+    async function getRecipe(){
+        // Use .then  to get async promise or make into async function and await response
+        const recipeMarkdown = await getRecipeFromMistral(ingredients)
+        setRecipe(recipeMarkdown)
     }
 
     return (
@@ -29,10 +32,10 @@ export default function Main (){
             {ingredients.length > 0 && 
                 <IngredientsList 
                     ingredients = {ingredients}
-                    toggleRecipeShown = {toggleRecipeShown}/>
+                    getRecipe = {getRecipe}/>
             }
 
-            {recipeShown && < ChefRecipe /> }
+            {recipe && < ChefRecipe recipe = {recipe} /> }
         </main>
     )
 }

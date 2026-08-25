@@ -14,7 +14,7 @@ export default function IngredientList (props) {
                     <h3>Build Your Recipe?</h3>
                     <p>Generate a personalised recipe from your list of ingredients.</p>
                 </span>
-                <button onClick={props.toggleRecipeShown}>Generate a Recipe</button>
+                <button onClick={props.getRecipe}>Generate a Recipe</button>
             </div>}
         </section>
     )
