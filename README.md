@@ -39,6 +39,20 @@
 
 - Practise conditional rendering
 
+- Working with dynamic data
+
+- API requests
+
+- fetch()
+
+- Handling API responses
+
+- Loading/error handling
+
+- Connecting frontend and backend
+
+- Component organization
+
 
 ## Instructions To Set up and Run:
 1. Set up React using Vite with:
